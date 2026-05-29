@@ -25,3 +25,9 @@
 => it is used to create start the server.
 # what is the use of res.json() ?
 => it is used to convert object into json.
+# what is the use of get?
+=> it is used to send the data from the server.
+# what is the use of post?
+=> it is used to send the data from client to server.
+# what is json midlware?
+=> json midlware is used to tell express to read JSON Data.
