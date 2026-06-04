@@ -31,3 +31,10 @@
 => it is used to send the data from client to server.
 # what is json midlware?
 => json midlware is used to tell express to read JSON Data.
+
+# what is crud?
+=> IT means create read Update and delete.
+1. create use post method
+2. Read used Get method
+3. Update used Put method
+4. Delete used Delete method
