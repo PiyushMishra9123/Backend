@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const Product = require("./models/Product");
 const User = require("./models/User");
+const auth = require("./middleware/auth");
 
 const app = express();
 
@@ -189,6 +190,14 @@ app.post("/login", async (req, res) => {
             message: err.message
         });
     }
+});
+
+// protected route
+app.get("/profile", auth, (req, res) => {
+    res.json({
+        message: "Welcome User",
+        userId: req.user.id
+    });
 });
 
 
